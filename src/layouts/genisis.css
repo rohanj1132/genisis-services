@@ -1,0 +1,34 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.gatsby-root,
+.site-root {
+    height: 100%;
+    margin: 0;
+}
+
+.under-const {
+    background-image: url('../../content/under-const.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.under-const__text-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 672px;
+}
+
+.under-const__text {
+    color: white;
+}
+
+.vertically-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
