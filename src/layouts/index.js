@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 // import './index.css'
 import './bootstrap.css'
 import './genisis.css'
@@ -17,7 +18,10 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    {children()}
+    <section className='content'>
+        {children()}
+    </section>
+    <Footer />
   </div>
 )
 
