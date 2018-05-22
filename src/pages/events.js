@@ -1,10 +1,46 @@
-import React from 'react'
-import UnderWraps from '../components/UnderWraps';
+import React from 'react';
+import PageTitle from '../components/PageTitle';
+import corporateTileImg from '../../content/corporate-event-tile.jpg';
+import socialTileImg from '../../content/social-event-tile.jpg';
+import weddingTileImg from '../../content/wedding-tile.jpg';
 
 const EventsPage = () => (
-  <div>
-    <UnderWraps />
-    {/*<h2>Corporate Events:</h2>
+    <div>
+        <PageTitle title='Events' />
+        <div className='container'>
+            <div className="card-deck">
+                <div className="card">
+                    <img className="card-img-top" src={corporateTileImg} alt="Card image cap" />
+                    <div className="card-body">
+                        <h5 className="card-title">Corporate Events</h5>
+                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" className="card-text">Read more</a>
+                    </div>
+                </div>
+                <div className="card">
+                    <img className="card-img-top" src={socialTileImg} alt="Card image cap" />
+                    <div className="card-body">
+                        <h5 className="card-title">Social Events</h5>
+                        <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" className="card-text">Read more</a>
+                    </div>
+                </div>
+                <div className="card">
+                    <img className="card-img-top" src={weddingTileImg} alt="Card image cap" />
+                    <div className="card-body">
+                        <h5 className="card-title">Weddings</h5>
+                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <a href="#" className="card-text">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+)
+
+export default EventsPage
+
+{/*<h2>Corporate Events:</h2>
     <p>
       We’ll Bring Your Event to Life!
       Our corporate customers never stop to stun us. Throughout the years, we have had the benefit to work with some skilled and creative individuals. We're fortunate to have assembled enduring connections and are regarded to work with these people consistently.
@@ -38,7 +74,3 @@ From the minute your visitors arrive, they will feel invited and amped up for wh
 Tuning in to you from the very first moment and working with you always beyond any doubt your vision turns into a reality… whatever that vision might be. 
 From creative hand passed hors d'oeurvres served by intelligently dressed servers to splendidly bundled favours… from an appreciated mark mixed drink served in an exquisite woodwind to our mark gourmet hot chocolate and coffeehouses… from unusual place card holders to a lit sparkler exit… from the primary nibble of the tweaked wedding supper to the last chomp of the debauched wedding cake – Genisis Services will give each detail of the enormous day our complete consideration
     </p>*/}
-    </div>
-)
-
-export default EventsPage

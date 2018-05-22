@@ -9,6 +9,10 @@ html, body {
     margin: 0;
 }
 
+.content {
+    min-height: calc(100vh - 226px);
+}
+
 .under-const {
     background-image: url('../../content/under-const.jpg');
     background-size: cover;
@@ -31,4 +35,10 @@ html, body {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
 }
