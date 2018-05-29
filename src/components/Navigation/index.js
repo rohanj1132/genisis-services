@@ -10,7 +10,6 @@ const Navbar = ({className}) => {
             <NavLink className='nav-item dropdown' to='/events/' title='Events' showDropDown>
                 <SubMenu links={['Corporate', 'Social', 'Wedding']} />
             </NavLink>
-            <NavLink className='nav-item' to='/services/' title='Services'></NavLink>
         </ul>
     );
 }
